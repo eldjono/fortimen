@@ -1,0 +1,67 @@
+{
+    "name": "samuCON",
+    "version": "1.0.0",
+    "label": "Discord Webhook",
+    "description": "a discord webhook connector",
+    "publisher": "samred",
+    "icon_small_name": "",
+    "icon_large_name": "discord.png",
+    "category": "",
+    "configuration": {
+        "fields": [
+            {
+                "title": "Webhook URL",
+                "type": "url",
+                "name": "webhook",
+                "required": true,
+                "visible": true,
+                "editable": true,
+                "value": null
+            }
+        ]
+    },
+    "operations": [
+        {
+            "operation": "send_message",
+            "title": "Send Message",
+            "description": "send",
+            "category": "",
+            "annotation": "",
+            "output_schema": {
+                "result": "",
+                "api_data": ""
+            },
+            "enabled": true,
+            "parameters": [
+                {
+                    "title": "webhook",
+                    "type": "url",
+                    "name": "webhook",
+                    "required": false,
+                    "visible": true,
+                    "editable": true,
+                    "value": null
+                },
+                {
+                    "title": "content",
+                    "type": "textarea",
+                    "name": "content",
+                    "required": false,
+                    "visible": true,
+                    "editable": true
+                },
+                {
+                    "title": "username",
+                    "type": "text",
+                    "name": "username",
+                    "required": false,
+                    "visible": true,
+                    "editable": true,
+                    "value": ""
+                }
+            ],
+            "open": false
+        }
+    ],
+    "forked_from": false
+}
